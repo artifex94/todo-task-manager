@@ -13,9 +13,3 @@ body {
   position: relative;
   min-height: 100vh;
 }
-
-@media (max-width: 768px) {
-  body {
-    width: 100%;
-  }
-}
