@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/todo-task-manager/static/css/main.d573c9b7.css",
+    "main.css": "/todo-task-manager/static/css/main.8fce5d52.css",
     "main.js": "/todo-task-manager/static/js/main.ae76dba4.js",
     "index.html": "/todo-task-manager/index.html",
-    "main.d573c9b7.css.map": "/todo-task-manager/static/css/main.d573c9b7.css.map",
+    "main.8fce5d52.css.map": "/todo-task-manager/static/css/main.8fce5d52.css.map",
     "main.ae76dba4.js.map": "/todo-task-manager/static/js/main.ae76dba4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d573c9b7.css",
+    "static/css/main.8fce5d52.css",
     "static/js/main.ae76dba4.js"
   ]
 }
