@@ -1,0 +1,12 @@
+.counter{
+    text-align: center;
+    color: antiquewhite;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.number {
+    font-weight: bold;
+}

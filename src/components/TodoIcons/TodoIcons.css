@@ -1,0 +1,34 @@
+.icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icon-check {
+    color: rgba(25, 0, 75, 0.5);
+    position: absolute;
+    left: 6px;
+}
+.icon-check:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-check--active{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0;
+}
+
+.icon-delete {
+    color: rgba(25, 0, 75, 0.5);
+    position: absolute;
+    right: 0;
+}
+
+.icon-delete:hover {
+    color: rgba(255, 15, 123, 0.75);
+}

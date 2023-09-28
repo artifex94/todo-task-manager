@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    position: relative;
+    width: 400px;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #f89b29;
+}
+
+.item__text {
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 15px;
+    display: block;
+    width: 300px;
+    font-family: 'Shantell Sans', cursive, sans-serif;
+    font-weight: normal;
+    color: rgba(25, 0, 75, 1);
+}
+
+.item__text--complete {
+    font-style: italic;
+    text-decoration: line-through;
+}
+

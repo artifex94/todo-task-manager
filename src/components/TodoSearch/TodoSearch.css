@@ -1,0 +1,25 @@
+.searchbar{
+    display: flexbox;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 380px;
+    padding-left: 15px;
+    box-shadow: inset 0px 0px 3px;
+    color: rgba(25, 0, 75, 1);
+    background-color: antiquewhite;
+    border: solid #ff0f7b 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: 'Shantell Sans', cursive, sans-serif;
+}
+
+.searchbar:focus {
+    outline: 1px;
+    outline-style: solid;
+    outline-color: #ff0f7b;
+    color: rgba(25, 0, 75, 1);
+}
