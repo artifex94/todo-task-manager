@@ -1,4 +1,4 @@
-.list{
+.TodoList-container{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,8 +6,4 @@
     flex-direction: column;
     text-align: center;
     color: antiquewhite;
-}
-
-.TodoList-text--empty{
-
 }
