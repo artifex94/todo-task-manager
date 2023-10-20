@@ -1,0 +1,32 @@
+.ChangeAlert-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1e1e1f50;
+    z-index: 2;
+}
+
+.ChangeAlert-container {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    padding: 34px;
+    font-size: 20px;
+    color: antiquewhite;
+    background: -webkit-linear-gradient(90deg, hsla(33, 94%, 57%, 1) 0%, hsl(333, 100%, 53%) 100%);
+    z-index: 2;
+}
+
+.ChangeAlert-container button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    padding: 10px;
+}

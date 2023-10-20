@@ -13,6 +13,7 @@ import { CreateTodoForm } from '../components/CreateTodoForm';
 import { TodoHeader } from '../components/TodoHeader';
 import { EmptyTodos } from '../components/EmptyTodos';
 import { EmptySearchedTodos } from '../components/EmptySearchedTodos';
+import { ChangeAlert } from '../components/ChangeAlert';
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
         completedTodos,
         totalTodos,
         addTodo,
-        setOpenModal
+        setOpenModal,
+        synchronizeTodos
     } = useTodos();
 
     return (
@@ -83,6 +85,10 @@ function App() {
                 )}
 
             </div>
+
+            <ChangeAlert
+            synchronize={synchronizeTodos}
+            />
         </>
     );
 }

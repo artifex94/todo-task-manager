@@ -2,6 +2,7 @@ import React from "react";
 
 function useLocalStorage(itemName, initialValue) {
 
+    const [synchronizedItem, setSynchronizedItem] = React.useState(true);
     const [item, setItem] = React.useState(initialValue);
     const [loading, setLoading] = React.useState(true);
     const [error, setError] = React.useState(false);
@@ -20,11 +21,11 @@ function useLocalStorage(itemName, initialValue) {
                     parsedItem = initialValue;
                 } else {
                     parsedItem = JSON.parse(localStorageItem);
-                    setItem(parsedItem);
                 }
-    
+                
+                setItem(parsedItem);
                 setLoading(false);
-    
+                setSynchronizedItem(true);
             } catch (error) {
                 setLoading(false);
                 setError(true);
@@ -32,34 +33,26 @@ function useLocalStorage(itemName, initialValue) {
 
         }, 3000);
 
-    }, []);
+    }, [synchronizedItem]);
 
     const saveItem = (newItem) => {
         localStorage.setItem(itemName, JSON.stringify(newItem));
         setItem(newItem);
     };
 
+    const synchronizeItem = () => {
+        setLoading(true);
+        setSynchronizedItem(false);
+    };
+
     return {
         item,
         saveItem,
         loading,
-        error
+        error,
+        synchronizeItem
     };
 
 }
 
 export { useLocalStorage };
-
-/* 
-localStorage.removeItem('TODOS_V1')
-
-const defaultTodos = [
-  { text: "Terminar la App de TODOs", completed: true },
-  { text: "Completar el curso de React.js", completed: false },
-  { text: "Ser feliz", completed: false },
-  { text: "Fumar un porrito", completed: false },
-];
-
-localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos))
-
-*/
